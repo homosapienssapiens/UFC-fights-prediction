@@ -1,5 +1,7 @@
 # Perceptron implementation for UFC fight results prediction
-
+<p align="center">
+  <img src="/Images/thetrilogy.jpg" />
+</p>
 
 # Overview
 
@@ -252,9 +254,9 @@ The image below shows the pie charts of the right and wrong predictions in both:
 
   
 
-
-
-![Training results](/Images/pie1.png)
+<p align="center">
+  <img src="/Images/pie1.png" />
+</p>
 
 
 
@@ -304,10 +306,9 @@ The model prediction was as accurate as in the testing. Getting 58% accuracy. Th
 The_ ‘Winner_predict’_ is the column with the model result predictions. The_ ‘Winner’ _column is the real result, and the _‘Result’_ column shows if the model was true or not. The following pie chart shows the percentage of right and wrong answers the model predicted.
 
 
-
-![UFC264_Predictions](/Images/pie2.png)
-
-
+<p align="center">
+  <img src="/Images/pie2.png" />
+</p>
 
 # Conclusion
 
