@@ -156,7 +156,9 @@ The dataset may be found in the following link:
 
 ## Hypothesis
 
-Feature Engineering
+The selected combination of inputs in this project are cappable of reaching at least 80% of prediction accuracy with a multi-lauyer perceptron neural network model.
+
+##Feature Engineering
 
 
 ### 1- Feature selection
