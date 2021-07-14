@@ -130,33 +130,21 @@ UFC: Ultimate Fighter Championship.
 
 ## The dataset
 
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
-
-
 The dataset was found in kaggle as the name of “Ultimate UFC dataset”. It includes 137 columns and the information of 4,771 official UFC fights. It’s size is 2 megabytes and It consists of 4 files:
 
 
 
-    * **most-recent-event.csv: **The information of the fights in the most recent event.
-    * **task-dummy.csv:** The dataset documentation doesn’t specify why is this csv file for. It contains the name of the fighters for the fights in the next event and their probabilities.
-    * **ufc-master.csv:**The master dataset with the data of 4,771 fights. 
-    * **Upcoming-event.csv:** The data of the fights for the upcoming event.
+* most-recent-event.csv: **The information of the fights in the most recent event.
+* task-dummy.csv:** The dataset documentation doesn’t specify why is this csv file for. It contains the name of the fighters for the fights in the next event and their probabilities.
+* ufc-master.csv:**The master dataset with the data of 4,771 fights. 
+* Upcoming-event.csv:** The data of the fights for the upcoming event.
 
 The csv to be used for the training and testing process will be ‘ufc-master.csv’ because here is where the history of fights are. The ‘upcoming-event.csv’ dataset will be used to test the model on-field. 
 
 This is the completeness of the dataset. Each black section is a value. Each white section is a the absence of value.
 
 
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.png "image_tooltip")
+![heat_map](/Images/heat.png)
 
 
 The dataset may be found in the following link:
@@ -196,11 +184,7 @@ The main characteristic they have in common is they describe the difference betw
 The following group of charts represents the distribution of each feature. 
 
 
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image7.png "image_tooltip")
+![Feature_distribution](/Images/distribution.png)
 
 
 _‘Height_dif’_ and _‘reach_dif’ _have a negative skew because of four outliers. These are maybe typos since it would require a 6 meter tall human being to accept a height difference of more than 400 cms. Further in this document the reader will realize these features didn’t have any impact on the model whatsoever.
@@ -209,10 +193,7 @@ The following image describes the completeness of the selected features. They ar
 
 
 
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image8.png "image_tooltip")
+![filtered_heat_map](/Images/heat2.png)
 
 
 
@@ -245,11 +226,7 @@ The library used in this project was entirely created by the author, the only ma
 
 
 
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image9.png "image_tooltip")
-
+![neural_network](/Images/NN.png)
 
 
 
@@ -277,10 +254,7 @@ The image below shows the pie charts of the right and wrong predictions in both:
 
 
 
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image10.png "image_tooltip")
+![Training results](/Images/pie1.png)
 
 
 
@@ -324,26 +298,14 @@ The model prediction was as accurate as in the testing. Getting 58% accuracy. Th
 
 
 
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image11.png "image_tooltip")
-
-
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image12.png "image_tooltip")
+![UFC264_results](/Images/UFC264.png)
 
 
 The_ ‘Winner_predict’_ is the column with the model result predictions. The_ ‘Winner’ _column is the real result, and the _‘Result’_ column shows if the model was true or not. The following pie chart shows the percentage of right and wrong answers the model predicted.
 
 
 
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image13.png "image_tooltip")
+![UFC264_Predictions](/Images/pie2.png)
 
 
 
@@ -384,10 +346,11 @@ Green, T. A., & Svinth, J. R. (2010). _Martial arts of the world : an encyclop
 
 ## Append A
 
-Source code of the project can be reached in the following google colab notebook.
+Source code of the project can be reached in the following google colab notebook...
 
 [https://colab.research.google.com/drive/12iMl9ujySF9sVoj3womXCX1C8y5Nl11m?usp=sharing](https://colab.research.google.com/drive/12iMl9ujySF9sVoj3womXCX1C8y5Nl11m?usp=sharing)
 
+...or in this repository.
 
 ## Append B
 
