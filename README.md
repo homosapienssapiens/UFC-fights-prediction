@@ -1,4 +1,4 @@
-# Perceptron implementation for UFC fight results prediction
+# Neural Network implementation for UFC fight results prediction
 <p align="center">
   <img src="/Images/thetrilogy.jpg" />
 </p>
